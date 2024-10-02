@@ -4,6 +4,8 @@
 from app import app
 from models import db, Earthquake
 
+earthquake = db.session.get(Earthquake, id)
+
 with app.app_context():
 
     # Delete all rows in the "earthquakes" table
